@@ -6,8 +6,8 @@ class Solution {
         int ans = Integer.MAX_VALUE;
         while(low<=high){
             int mid = low + (high-low)/2;
-            if(nums[low]<=nums[high])ans = Math.min(ans,nums[low]);
-            if(nums[mid]>=nums[low]){
+            // if(nums[low]<=nums[high])ans = Math.min(ans,nums[low]);
+            if(nums[mid]>=nums[high]){
                 ans = Math.min(ans,nums[mid]);
                 low = mid + 1;            
             }
