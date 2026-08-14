@@ -1,22 +1,20 @@
 class Solution {
     public int maximumLengthSubstring(String s) {
 
-        int max = 0;
-        for (int i = 0; i < s.length(); i++) {
-            int[] arr = new int[26];
-            int len = 0;
-            for (int j = i; j < s.length(); j++) {
-                arr[s.charAt(j) - 'a']++;
-                if (arr[s.charAt(j) - 'a'] > 2) {
-                    break;
-                }
-                len = j-i+1;
+        int[] arr = new int[26];
+        int j = 0;
+        int max  = 0;
 
+        for(int i = 0 ; i<s.length() ; i++){
+            arr[s.charAt(i)-'a']++;
+
+            while(arr[s.charAt(i)-'a']>2){
+                arr[s.charAt(j)-'a']--;
+                j++;
             }
-            max = Math.max(max, len);
+            max = Math.max(max,i-j+1);
 
         }
         return max;
-
     }
 }
