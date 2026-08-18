@@ -16,7 +16,7 @@ class Solution {
             }
             
             if(c1!=1 && c1!=c2){
-                str.append(s.charAt(i)+"");
+                str.append(s.charAt(i));
             }
 
             if(c1==c2){
