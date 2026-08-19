@@ -5,14 +5,14 @@ class Solution {
 
         for (int i = 0; i < reservedSeats.length; i++) {
 
-            int row = reservedSeats[i][0];
-            int seat = reservedSeats[i][1];
+            int a = reservedSeats[i][0];
+            int b = reservedSeats[i][1];
 
-            if (!map.containsKey(row)) {
-                map.put(row, new boolean[10]);
+            if (!map.containsKey(a)) {
+                map.put(a, new boolean[10]);
             }
 
-            map.get(row)[seat - 1] = true;
+            map.get(a)[b-1] = true;
         }
 
         int ans = (n - map.size()) * 2;
