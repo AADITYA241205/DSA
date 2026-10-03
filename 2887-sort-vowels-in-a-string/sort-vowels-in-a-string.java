@@ -3,8 +3,7 @@ class Solution {
 
         int[] arr = new int[128];
 
-        // Count frequency of each vowel
-        for(int i =  0 ; i<s.length() ; i++) {
+        for(int i =  0 ; i<s.length() ; i++){
             char c = s.charAt(i);
             if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' ||c=='A' || c=='E' || c=='I' || c =='O' || c=='U'){
                 arr[c]++;
