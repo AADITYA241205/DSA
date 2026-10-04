@@ -19,7 +19,7 @@ class Solution {
                 h--;
             }
 
-            if(h < 0){
+            if(h<0){
                 return false;
             }
 
