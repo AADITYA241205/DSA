@@ -4,7 +4,7 @@ class Solution {
         int c = 0;
         int h = 0;
 
-        for (int i = 0; i < s.length(); i++) {
+        for(int i = 0; i < s.length(); i++){
 
             if(s.charAt(i)=='*'){
                 c--;   
