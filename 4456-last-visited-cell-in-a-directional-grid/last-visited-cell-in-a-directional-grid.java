@@ -14,21 +14,21 @@ class Solution {
             int nr = r;
             int nc = c;
 
-            if (grid[r][c] == 'L') {
+            if(grid[r][c] == 'L'){
                 nc--;
-            } else if (grid[r][c] == 'R') {
+            }else if (grid[r][c] == 'R'){
                 nc++;
-            } else if (grid[r][c] == 'U') {
+            }else if (grid[r][c] == 'U'){
                 nr--;
-            } else if (grid[r][c] == 'D') {
+            }else if (grid[r][c] == 'D'){
                 nr++;
             }
 
-            if (nr < 0 || nr >= m || nc < 0 || nc >= n) {
+            if(nr < 0 || nr >= m || nc < 0 || nc >= n){
                 break;
             }
 
-            if (visited[nr][nc]) {
+            if(visited[nr][nc]){
                 break;
             }
 
